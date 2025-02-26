@@ -9,6 +9,7 @@
 		<title>Nex-Sims by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Nex-Sims provides reliable professionals with CFD, FEA, and CAD expertise for Research Teams and Industrial Projects">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -27,10 +28,10 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="generic.html">About Next-Sims</a></li>
+											<li><a href="elements.html">Why us</a></li>
+											<li><a href="Products.html">Our Products</a></li>
+											<li><a href="Careers.html">Career</a></li>
 										</ul>
 									</div>
 								</li>
@@ -44,7 +45,7 @@
 							<h2>Nex-Sims</h2>
 							<p>Your trusted partner in simulation and product design consultancy</p>
 							<ul class="actions special">
-								<li><a href="#" class="button primary">Explore Solutions</a></li>
+								<li><a href="Products.html" class="button primary">Explore Solutions</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -54,21 +55,16 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>"Welcome to Nex-Sims, where innovation meets precision"</h2>
+								<h2>Welcome to Nex-Sims <small>— where innovation meets precision</small></h2>
 								<p>We specialize in providing high-quality Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD) simulations, and Computer-Aided Design (CAD) modeling services tailored to the needs of research teams and industry professionals</p>
 							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">CFD</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">AI Integration</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">HPC</span></span></li>
-							</ul>
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="CFD Analysis" /></div>
+							<div class="image"><img src="images/cfd.jpg" alt="CFD Analysis" /></div>
 							<div class="content">
 								<h2>CFD Simulations</h2>
 								<ul>
@@ -79,7 +75,7 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="ML Prediction" /></div>
+							<div class="image"><img src="images/fea.jpg" alt="ML Prediction" /></div>
 							<div class="content">
 								<h2>FEA Solutions</h2>
 								<ul>
@@ -90,7 +86,7 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="HPC Simulation" /></div>
+							<div class="image"><img src="images/cad.jpg" alt="HPC Simulation" /></div>
 							<div class="content">
 								<h2>CAD Modeling & Design</h2>
 								<ul>
@@ -142,13 +138,38 @@
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Have a challenging project in mind?</h2>
+								<h2>Have a challenging project?</h2>
 								<p>"Let Nex-Sims help you bring it to life. Whether you need advanced simulations, robust analyses, or optimized designs, we’re here to support your journey from concept to reality"</p>
-							</header>
+							</header>						
 							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Contact Us</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="javascript:void(0);" class="button fit primary" onclick="toggleSection('contactSection')">Contact Us</a></li>
+								<li><a href="javascript:void(0);" class="button fit" onclick="toggleSection('learnMoreSection')">Learn More</a></li>
 							</ul>
+
+							<!-- Contact Us Section -->
+							<div id="contactSection" style="display: none; margin-top: 20px;">
+								<h3>Contact Us</h3>
+								<form>
+									<input type="text" name="name" placeholder="Your Name" required>
+									<input type="email" name="email" placeholder="Your Email" required>
+									<textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+									<button type="submit" class="button primary">Send Message</button>
+								</form>
+							</div>
+
+							<!-- Learn More Section -->
+							<div id="learnMoreSection" style="display: none; margin-top: 20px;">
+								<h3>Learn More About Nex-Sims</h3>
+								<p>At Nex-Sims, we provide top-tier simulation services including CFD, FEA, and CAD modeling. Our expertise ensures precise solutions tailored to your needs, leveraging high-performance computing for optimal results.</p>
+							</div>
+
+							<!-- JavaScript for Toggle Function -->
+							<script>
+								function toggleSection(sectionId) {
+									var section = document.getElementById(sectionId);
+									section.style.display = (section.style.display === "none" || section.style.display === "") ? "block" : "none";
+								}
+							</script>
 						</div>
 					</section>
 
@@ -162,7 +183,7 @@
 							<li><a href="mailto:info@nex-sims.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Nex-Sims</li><li>EMAIL: <a href="info@nex-sims.com">HTML5 UP</a></li>
+							<li>EMAIL: <a href="mailto:info@nex-sims.com">info@nex-sims.com</a></li>
 						</ul>
 					</footer>
 
@@ -179,3 +200,6 @@
 
 	</body>
 </html>
+
+
+
